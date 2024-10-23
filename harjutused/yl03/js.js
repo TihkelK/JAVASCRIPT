@@ -1,4 +1,7 @@
-console.log("---")
+const soidukaugus = 10; // km
+const kiirus = 2; // km/h
+const asdasd = kiirus * soidukaugus;
+console.log(asdasd);
 
 const postitused = 137;
 const ppost = (postitused / 10)
