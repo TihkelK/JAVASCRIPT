@@ -35,5 +35,5 @@ for (let j = 0; j < temperatures.length; j++) {
 }
 const max = kkeskmised.reduce((a,b) => Math.max(a,b), -Infinity);
 const min = kkeskmised.reduce((a,b) => Math.min(a,b), Infinity);
-console.log(months.split(",")[kkeskmised.indexOf(max)]);
-console.log(months.split(",")[kkeskmised.indexOf(min)]);
+console.log(months.split(",")[kkeskmised.indexOf(max)] + " " + kkeskmised.indexOf(max));
+console.log(months.split(",")[kkeskmised.indexOf(min)] + " " + kkeskmised.indexOf(min));

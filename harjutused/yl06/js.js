@@ -15,6 +15,7 @@ switch (true){
         tyyp = "katki";
 }
 console.log("Number on " + tyyp);
+
 // Restoran
 let bron = 3;
 let lause;

@@ -9,6 +9,7 @@ if (temp > 15 && temp < 25){
 if (temp <= 15){
     console.log("Jahe ilm!")
 }
+
 // Kasutajanime kontroll
 let username = "admin";
 if (username == "admin"){
@@ -17,6 +18,7 @@ if (username == "admin"){
 if (username != "admin"){
     console.log("Tere, külaline!")
 }
+
 // Ürituse piletite hind
 let pilet = "sooduspilet";
 let vanus = 18;
