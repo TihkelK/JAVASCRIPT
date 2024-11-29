@@ -16,17 +16,17 @@ const ostukorv = {
     kuva: function() {
         this.tooted.forEach((toode) => {
             console.log(`${toode.nimi} - ${toode.hind} EUR - Kogus: ${toode.kogus}`);
-        })
-    }
+        });
+    },
 
     lisa: function(nimi, hind, kogus) {
         this.tooted.push({nimi, hind, kogus});
         console.log(`Toode ${nimi} on lisatud ostukorvi.`);
         
-    }
+    },
     
     summa: function() {
-        return this.tooted.reduce((this.summa, toode) => summa + (toode.hind * toode.kogus), 0).toFixed(2);
+        return this.tooted.reduce((summa, toode) => summa + (toode.hind * toode.kogus), 0).toFixed(2);
     }
 };
 ostukorv.kuva();
