@@ -1,26 +1,7 @@
-// Toote objekt
-let toode = {
-    nimetus: 'piim', hind: 20, kogus: 6000,
+var ul = document.querySelector('ul')
+var p = document.querySelector('p')
 
-    koguhind(){
-        return this.hind * this.kogus
-    },
 
-    kogusmuuda(kogus){
-        this.kogus = kogus
-    },
-    sisu(){
-        return `toode: ${this.nimetus}, hind: ${this.hind}, kogus:${this.kogus}`
-    }
-}
-
-console.log(toode.nimetus + ', ' + toode.hind + ', ' + toode.kogus)
-toode.kogusmuuda(200); console.log(toode.kogus)
-console.log(toode.sisu())
-console.log()
-
-console.log("---")
-// Ostukorv
 const ostukorv = {
     tooted: [
         { nimi:'Piim', hind:3.60, kogus:2 },
@@ -50,3 +31,9 @@ ostukorv.kuva();
 ostukorv.lisa('Salat', 3.70, 2);
 
 console.log('Ostukorvi kogu summa: ', ostukorv.summa());
+
+ostukorv.tooted.forEach(element => {
+    ul.innerHTML += `<li>Toode: ${element.nimi}, Hind: ${element.hind}, Kogus: ${element.kogus}</li>`;
+});
+
+p.innerHTML += `<p>${ostukorv.summa()} on kogusumma</p>`
